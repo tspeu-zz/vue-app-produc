@@ -17,7 +17,15 @@ var app= new Vue({
     },
     created(){
         // setInterval(() => {
-        //     this.segundos ++
-        // } , 1000);
-    }
-});
+            //     this.segundos ++
+            // } , 1000);
+        }
+    });
+    
+    // function checkInStock (stock) {
+        
+    //     return stock == true ? true : false;   
+    // }
+    //onSale : inStock == true ? true : false 
+
+    
