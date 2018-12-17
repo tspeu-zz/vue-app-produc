@@ -12,7 +12,8 @@ var app= new Vue({
         altText :'A pair of VUE socks',
         anchText: '#',
         inStock : true, 
-        inventory : 100
+        inventory : 100,
+        onSale : true
     },
     created(){
         // setInterval(() => {
