@@ -4,15 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Vuegit  App_jm</title>
+    <title>Vue App_jm</title>
+    <link rel="stylesheet" type="text/css" href="style/product_style.css">
 </head>
 <body>
+
+    <div class="nav-bar"></div>
     <div id="app">
-        <h1>{{ product }}</h1>
-
-
-
-        <p>https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/</p>
+        <div class="product">
+            <div class="product-image">
+                <img :src="image" :alt="altText" :href="anchText">
+            </div>
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+                <p v-if="inventory > 10"> In Stock</p>
+                <p v-else-if="inventory<= 10 && inventory > 0"> Almost sold out!</p>
+                <p v-else> Out of Stock</p>
+            </div>
+            
+            <!-- <button type="button" :disabled="buttonDeshabi"></button> -->
+            
+            <!-- <h2> Han pasado {{ segundos}} al abrir la pagina ! =)</h2> -->
+            
+            <p v-if="linkin">https://www.vuemastery.com/courses/intro-to-vue-js/vue-instance/</p>
+        </div>
     </div>
     
 
